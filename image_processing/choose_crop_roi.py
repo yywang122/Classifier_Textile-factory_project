@@ -1,9 +1,8 @@
 import cv2
 import os
 #Sticky Hairiness Silk_scraps
+
 # 輸入資料夾和輸出資料夾
-#input_folder = '/home/cluster/factory_project/data/Sticky'
-#output_folder = '/home/cluster/factory_project/crop_data/Sticky'
 input_folder = '/home/cluster/data/fatory_training_data/factory_data_b_super/val/Sticky'
 output_folder = '/home/cluster/data/fatory_training_data/factory_data_b_super_c/val/Sticky'
 # 設定新的裁剪大小
@@ -77,26 +76,6 @@ while current_image_index < len(image_files):
 
     # 關閉裁剪後的圖片視窗
         cv2.destroyWindow("Cropped Image")
-
-
-
-'''
-    # 關閉視窗
-        cv2.destroyAllWindows()
-
-    # 顯示裁剪後的圖片
-        cv2.imshow("Cropped Image", cropped_img)
-
-    # 等待使用者按鍵
-    key = cv2.waitKey(0)
-
-    if key == ord('s'):
-        # 決定保存的檔案名稱，例如 "cropped_image_1.jpg"
-
-    
-
-    # 關閉裁剪後的圖片視窗
-    cv2.destroyWindow("Cropped Image")'''
 	
 print("圖片處理完成。")
 cv2.destroyAllWindows()
